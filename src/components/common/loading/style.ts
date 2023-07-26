@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
-export const LoadingWrapper = styled.div<{ display: string }>`
-  display: ${({ display }) => display};
+export const LoadingWrapper = styled.div`
   position: fixed;
   z-index: 999;
   top: 50%;
@@ -9,14 +8,13 @@ export const LoadingWrapper = styled.div<{ display: string }>`
   transform: translate(-50%, -50%);
 `
 
-export const LoadingOverlay = styled.div<{ display: string }>`
+export const LoadingOverlay = styled.div`
   position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: ${({ display }) => display};
   background-color: rgba(0, 0, 0, 0.8);
 `
 
